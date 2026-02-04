@@ -282,3 +282,33 @@ h2{
   }
   .hamburger{display:block}
 }
+/* Testimonials slider spacing */
+.testimonials-swiper {
+  padding: 16px 0 48px; /* room for pagination dots */
+}
+
+/* Make testimonial cards look professional */
+.t-card {
+  border-radius: 16px;
+  padding: 18px 18px;
+  height: auto;            /* important: do NOT force fixed height */
+  box-sizing: border-box;
+}
+
+/* Meta styling */
+.t-meta {
+  margin-top: 12px;
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+/* Ensure swiper wrapper doesn't clip */
+#testimonialsSwiper .swiper-wrapper {
+  height: auto;
+}
+
+/* Optional: nicer pagination position */
+#testimonialsSwiper .swiper-pagination {
+  bottom: 8px !important;
+}
+

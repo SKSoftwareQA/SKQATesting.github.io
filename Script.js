@@ -10,27 +10,35 @@ if (hamburger && navLinks) {
   });
 }
 
-// HERO SWIPER
-const heroSwiperEl = document.querySelector("#heroSwiper");
-if (heroSwiperEl) {
+// HERO SWIPER (Home slider)
+document.addEventListener("DOMContentLoaded", () => {
+  const heroEl = document.querySelector("#heroSwiper");
+  if (!heroEl) return;
+
   new Swiper("#heroSwiper", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 16,
+    grabCursor: true,
+
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
+
     navigation: {
       nextEl: "#heroSwiper .swiper-button-next",
       prevEl: "#heroSwiper .swiper-button-prev",
     },
+
     pagination: {
       el: "#heroSwiper .swiper-pagination",
       clickable: true,
     },
   });
-}
+});
+
 
 // TESTIMONIALS SWIPER
 const testimonialsSwiperEl = document.querySelector("#testimonialsSwiper");
@@ -63,3 +71,4 @@ if (testimonialsSwiperEl) {
     },
   });
 }
+

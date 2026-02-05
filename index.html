@@ -4,20 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Deepak SK Mittal Software Testing — Professional QA & Testing Services</title>
+  <title>SK Software Testing — Professional QA & Testing Services</title>
 
   <meta
     name="description"
     content="Freelance QA Engineer providing Manual, Functional, Game, DB, Cloud, Accessibility, AI Agent/ML, Chatbots, API Testing and Mobile testing services. Fast delivery, clear reporting."
   />
 
+  <!-- Enable JS-only animations safely (prevents hidden sections when JS fails) -->
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -44,12 +46,12 @@
 
   <!-- Hero -->
   <main id="top" class="hero">
-    <!-- Premium SaaS hero effects -->
-    <div class="hero-bg">
+    <!-- Premium hero effects -->
+    <div class="hero-bg" aria-hidden="true">
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
       <div class="blob blob-3"></div>
-      <canvas id="heroParticles" aria-hidden="true"></canvas>
+      <canvas id="heroParticles"></canvas>
     </div>
 
     <div class="container hero-grid">
@@ -68,17 +70,40 @@
           <a class="btn btn-ghost" href="#samples">View Deliverables</a>
         </div>
 
-        <div class="proof">
+        <!-- ✅ Logos strip -->
+        <div class="logos">
+          <div class="logos-label">Tools I work with</div>
+          <div class="logos-row" aria-label="Tool logos">
+            <span class="logo-pill">Jira</span>
+            <span class="logo-pill">Postman</span>
+            <span class="logo-pill">BrowserStack</span>
+            <span class="logo-pill">TestRail</span>
+            <span class="logo-pill">Swagger</span>
+            <span class="logo-pill">Selenium</span>
+            <span class="logo-pill">Playwright</span>
+          </div>
+        </div>
+
+        <!-- ✅ Counters (animated) -->
+        <div class="proof counters" id="counters">
           <div class="proof-box">
-            <div class="proof-big">4.8★</div>
+            <div class="proof-big">
+              <span class="count" data-target="4.8" data-decimals="1">0</span><span class="suffix">★</span>
+            </div>
             <div class="proof-small">Client satisfaction</div>
           </div>
+
           <div class="proof-box">
-            <div class="proof-big">24–72h</div>
+            <div class="proof-big">
+              <span class="count" data-target="24" data-decimals="0">0</span>–<span class="count" data-target="72" data-decimals="0">0</span><span class="suffix">h</span>
+            </div>
             <div class="proof-small">Typical turnaround</div>
           </div>
+
           <div class="proof-box">
-            <div class="proof-big">6+ yrs</div>
+            <div class="proof-big">
+              <span class="count" data-target="6" data-decimals="0">0</span><span class="suffix">+ yrs</span>
+            </div>
             <div class="proof-small">Testing experience</div>
           </div>
         </div>
@@ -89,7 +114,6 @@
         <div class="swiper" id="heroSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-card">
-              <!-- FIX: direct Google Drive image link -->
               <img
                 src="https://drive.google.com/uc?export=view&id=13j9e5DARp_YjL4nLnsM4Aq-sIdegcYZc"
                 alt="Testing dashboard"
@@ -131,8 +155,8 @@
       <h2>About</h2>
 
       <p class="lead">
-        I’m a Software Testing professional helping startups and teams improve quality with
-        structured test planning, fast execution, and actionable bug reporting.
+        I’m a Software Testing professional helping startups and teams improve quality with structured test planning,
+        fast execution, and actionable bug reporting.
       </p>
 
       <div class="chips">
@@ -160,7 +184,7 @@
 
         <div class="card">
           <h3>Accessibility Testing</h3>
-          <p>WCAG compliance audits, screen reader checks, keyboard navigation, color contrast, ARIA validation.</p>
+          <p>WCAG audits, screen readers, keyboard-only navigation, contrast checks, ARIA validation.</p>
         </div>
 
         <div class="card">
@@ -175,12 +199,12 @@
 
         <div class="card">
           <h3>Bug Reporting</h3>
-          <p>Clear repro steps, expected vs actual, logs, screenshots/videos, severity & priority.</p>
+          <p>Clear repro steps, expected vs actual, logs, evidence, severity & priority.</p>
         </div>
 
         <div class="card">
           <h3>Process Setup</h3>
-          <p>Test strategy, QA checklist, definition of done, and lightweight QA flow.</p>
+          <p>Test strategy, QA checklist, Definition of Done, and lightweight QA workflows.</p>
         </div>
       </div>
     </div>
@@ -263,7 +287,9 @@
           <div class="muted">Delivery: same day – 72 hours</div>
         </div>
 
-        <div class="card price">
+        <!-- ✅ Most Popular -->
+        <div class="card price popular">
+          <div class="popular-badge">Most Popular</div>
           <h3>Starter Package</h3>
           <div class="price-big">$199</div>
           <ul>
@@ -272,6 +298,9 @@
             <li>1 re-test cycle</li>
           </ul>
           <div class="muted">Delivery: 2–4 days</div>
+          <div class="price-cta">
+            <a class="btn btn-small" href="#contact">Get This Package</a>
+          </div>
         </div>
 
         <div class="card price">
@@ -285,6 +314,10 @@
           <div class="muted">Delivery: 5–7 days</div>
         </div>
       </div>
+
+      <p class="muted small-note">
+        Tip: I can customize packages based on your app size, timeline, and release schedule.
+      </p>
     </div>
   </section>
 
@@ -294,11 +327,10 @@
       <h2>Contact</h2>
       <p class="lead">Tell me about your product, timeline, and what you need tested.</p>
 
-      <!-- FIX: proper nesting (two cards side-by-side) -->
       <div class="contact-grid">
         <div class="card">
           <h3>Direct</h3>
-          <p><b>Email:</b> deepaksharadmittal@gmail.com</p>
+          <p><b>Email:</b> sksoftwaretestingtraining@gmail.com</p>
           <p><b>WhatsApp:</b> +91-9826095510</p>
           <p><b>Timezone:</b> IST (Asia/Kolkata)</p>
         </div>
@@ -306,7 +338,7 @@
         <div class="card">
           <h3>Social</h3>
           <p>
-            <a href="https://www.linkedin.com/in/deepak-sharad-k-85b031230/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/sk-software-testing-solutions-292206244/" target="_blank" rel="noreferrer">LinkedIn</a>
           </p>
           <p>
             <a href="https://github.com/SKSoftwareQA" target="_blank" rel="noreferrer">GitHub</a>
@@ -318,17 +350,36 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div>© <span id="year"></span> Deepak Mittal Software Testing — Professional QA & Testing Services</div>
+      <div>© <span id="year"></span> SK Software Testing — Professional QA & Testing Services</div>
       <div class="muted">Built with HTML/CSS/JS • Hosted free</div>
     </div>
   </footer>
+
+  <!-- Sticky CTA Bar -->
+  <div class="sticky-cta" id="stickyCta" role="region" aria-label="Quick contact actions">
+    <div class="sticky-cta-inner">
+      <div class="sticky-cta-left">
+        <div class="sticky-badge">Available for QA Projects</div>
+        <div class="sticky-text">
+          Want a quick QA audit or release testing? <span class="sticky-text-strong">Get a reply today.</span>
+        </div>
+      </div>
+
+      <div class="sticky-cta-actions">
+        <a class="sticky-btn sticky-btn-ghost" href="mailto:sksoftwaretestingtraining@gmail.com">Email</a>
+        <a class="sticky-btn sticky-btn-whatsapp" href="https://wa.me/919826095510" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="sticky-btn sticky-btn-primary" href="#contact">Hire Me</a>
+        <button class="sticky-close" id="stickyClose" aria-label="Close quick actions">✕</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Rocket button -->
   <button class="rocket-btn" id="rocketBtn" aria-label="Scroll to top">🚀</button>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- IMPORTANT: ensure filename matches exactly: script.js -->
   <script src="script.js"></script>
-
 </body>
 </html>

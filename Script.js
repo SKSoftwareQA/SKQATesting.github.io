@@ -295,4 +295,22 @@ if (rocketBtn) {
   window.addEventListener("load", start);
   document.addEventListener("DOMContentLoaded", start);
 })();
+const rocketBtn = document.getElementById("rocketBtn");
+
+if (rocketBtn) {
+  rocketBtn.addEventListener("click", () => {
+
+    rocketBtn.classList.add("rocket-fire");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    setTimeout(() => {
+      rocketBtn.classList.remove("rocket-fire");
+    }, 800);
+  });
+}
+
 

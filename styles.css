@@ -708,7 +708,38 @@ body {
 .btn:hover {
   background: var(--accent-hover);
 }
+.rocket-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 90px;
+  font-size: 24px;
+  background: #4F8CFF;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(79,140,255,0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.rocket-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Rocket fire animation */
+.rocket-fire {
+  animation: rocketLaunch 0.8s ease forwards;
+}
+
+@keyframes rocketLaunch {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  100% { transform: translateY(-600px); opacity: 0; }
+}
 
 }
+
 
 

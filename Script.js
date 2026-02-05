@@ -182,6 +182,23 @@ function animateCounter(el, target, decimals) {
 
   io.observe(wrap);
 })();
+const rocketBtn = document.getElementById("rocketBtn");
+
+if (rocketBtn) {
+  rocketBtn.addEventListener("click", () => {
+
+    rocketBtn.classList.add("rocket-fire");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    setTimeout(() => {
+      rocketBtn.classList.remove("rocket-fire");
+    }, 800);
+  });
+}
 
 /* =============================
    Premium Hero Particles
@@ -278,3 +295,4 @@ function animateCounter(el, target, decimals) {
   window.addEventListener("load", start);
   document.addEventListener("DOMContentLoaded", start);
 })();
+

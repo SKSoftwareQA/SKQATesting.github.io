@@ -1,3 +1,6 @@
+// Add .js class for safe reveal animations (won't break if JS fails)
+document.documentElement.classList.add("js");
+
 // Mobile menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
@@ -9,11 +12,10 @@ if (hamburger && navLinks) {
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Swipers (Hero + Testimonials)
+// Swipers
 document.addEventListener("DOMContentLoaded", () => {
   if (window.Swiper) {
-    const heroEl = document.querySelector("#heroSwiper");
-    if (heroEl) {
+    if (document.querySelector("#heroSwiper")) {
       new Swiper("#heroSwiper", {
         loop: true,
         grabCursor: true,
@@ -24,8 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    const testEl = document.querySelector("#testimonialsSwiper");
-    if (testEl) {
+    if (document.querySelector("#testimonialsSwiper")) {
       new Swiper("#testimonialsSwiper", {
         loop: true,
         grabCursor: true,
@@ -42,18 +43,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Reveal (safe)
+  // Reveal
   const revealEls = document.querySelectorAll(".reveal");
   const reveal = () => {
     revealEls.forEach(el => {
-      if (el.getBoundingClientRect().top < window.innerHeight - 120) el.classList.add("active");
+      if (el.getBoundingClientRect().top < window.innerHeight - 120) {
+        el.classList.add("active");
+      }
     });
   };
   window.addEventListener("scroll", reveal);
   reveal();
 });
 
-// Rocket fire scroll-to-top
+// Rocket scroll-to-top with fire animation
 const rocketBtn = document.getElementById("rocketBtn");
 if (rocketBtn) {
   rocketBtn.addEventListener("click", () => {
@@ -63,8 +66,15 @@ if (rocketBtn) {
 
     setTimeout(() => {
       rocketBtn.classList.remove("rocket-fire");
-      // Bring it back after animation so user can reuse
-      setTimeout(() => (rocketBtn.style.opacity = "1"), 50);
-    }, 850);
+    }, 900);
+  });
+}
+
+// Sticky CTA close
+const stickyClose = document.getElementById("stickyClose");
+const stickyCta = document.getElementById("stickyCta");
+if (stickyClose && stickyCta) {
+  stickyClose.addEventListener("click", () => {
+    stickyCta.style.display = "none";
   });
 }

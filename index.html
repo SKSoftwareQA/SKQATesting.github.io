@@ -3,19 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <Title>Deepak SK Mittal Software Testing — Professional QA & Testing Services</Title>
-  <meta name="description" content="Freelance QA Engineer providing Manual, Funcational, Game, DB, Cloud, Accessibility, AI Agent/ML, Chatbots, API Testing and Mobile testing services. Fast delivery, clear reporting." />
+
+  <title>Deepak SK Mittal Software Testing — Professional QA & Testing Services</title>
+
+  <meta
+    name="description"
+    content="Freelance QA Engineer providing Manual, Functional, Game, DB, Cloud, Accessibility, AI Agent/ML, Chatbots, API Testing and Mobile testing services. Fast delivery, clear reporting."
+  />
 
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Swiper (Hero + Testimonials slider) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
+
 <body>
+
   <!-- Navbar -->
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">SK Software Testing — Professional QA & Testing Services<span>.</span></a>
+      <a class="brand" href="#top">
+        SK Software Testing — Professional QA & Testing Services<span>.</span>
+      </a>
+
       <nav class="links" id="navLinks">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -24,19 +37,30 @@
         <a href="#pricing">Rates</a>
         <a class="btn btn-small" href="#contact">Hire Me</a>
       </nav>
+
       <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
     </div>
   </header>
 
   <!-- Hero -->
   <main id="top" class="hero">
+    <!-- Premium SaaS hero effects -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <canvas id="heroParticles" aria-hidden="true"></canvas>
+    </div>
+
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="pill">QA / Software Testing • Remote • IST / EST</p>
-        <h1>Ship with confidence.<br/>I find bugs before your users do.</h1>
+
+        <h1>Ship with confidence.<br />I find bugs before your users do.</h1>
+
         <p class="sub">
-          Manual + DB + Cloud + Accessibility + AI Agent/ML + Chatbots + API testing with clear test plans, strong test cases,
-          and production-ready bug reports.
+          Manual + DB + Cloud + Accessibility + AI Agent/ML + Chatbots + API testing with clear test plans,
+          strong test cases, and production-ready bug reports.
         </p>
 
         <div class="cta-row">
@@ -65,18 +89,34 @@
         <div class="swiper" id="heroSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-card">
-              <img src="https://drive.google.com/file/d/13j9e5DARp_YjL4nLnsM4Aq-sIdegcYZc/view?usp=sharing" alt="Testing dashboard" />
+              <!-- FIX: direct Google Drive image link -->
+              <img
+                src="https://drive.google.com/uc?export=view&id=13j9e5DARp_YjL4nLnsM4Aq-sIdegcYZc"
+                alt="Testing dashboard"
+                loading="lazy"
+              />
               <div class="slide-caption">Exploratory + regression testing</div>
             </div>
+
             <div class="swiper-slide slide-card">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=70" alt="Reports" />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=70"
+                alt="Reports"
+                loading="lazy"
+              />
               <div class="slide-caption">Clear reports & documentation</div>
             </div>
+
             <div class="swiper-slide slide-card">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=70" alt="Team work" />
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=70"
+                alt="Team work"
+                loading="lazy"
+              />
               <div class="slide-caption">Collaboration with dev teams</div>
             </div>
           </div>
+
           <div class="swiper-button-prev" aria-label="Previous slide"></div>
           <div class="swiper-button-next" aria-label="Next slide"></div>
           <div class="swiper-pagination"></div>
@@ -86,84 +126,98 @@
   </main>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <div class="container">
       <h2>About</h2>
+
       <p class="lead">
         I’m a Software Testing professional helping startups and teams improve quality with
         structured test planning, fast execution, and actionable bug reporting.
       </p>
+
       <div class="chips">
-        <span>Manual Testing (Funcational / Regression / End to End / Usability/ Compatibility / User Acceptance Testing (UAT))</span>
+        <span>Manual Testing (Functional / Regression / End-to-End / UAT)</span>
         <span>API (Postman / Swagger)</span>
         <span>Mobile (iOS / Android)</span>
         <span>Game Testing</span>
-        <span>Accessibility Testing (WCAG 2.1/2.2 (Level A, AA, AAA)/ ADA compliance/ and Section 508. )</span>
-        <span>Agile / Jira / Trello / Asana / Notion / Browser Stack / Testrail /</span>
-        
+        <span>Accessibility Testing (WCAG / ADA / Section 508)</span>
+        <span>Agile / Jira / Trello / Asana / Notion / BrowserStack / TestRail</span>
         <span>Automation (Selenium / Playwright)</span>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="section alt">
+  <section id="services" class="section alt reveal">
     <div class="container">
       <h2>Services</h2>
+
       <div class="grid3">
         <div class="card">
           <h3>Manual Testing</h3>
-          <p>Exploratory, Regression, Smoke, Sanity, UI/UX Checks, Cross-Browser Testing.</p>
+          <p>Exploratory, Regression, Smoke, Sanity, UI/UX checks, Cross-browser testing.</p>
         </div>
+
         <div class="card">
           <h3>Accessibility Testing</h3>
-          <p>WCAG Compliance Audits (A/AA/AAA), Screen Reader Compatibility, Keyboard Navigation, Color Contrast, Focus Management, and ARIA Validation.</p>
+          <p>WCAG compliance audits, screen reader checks, keyboard navigation, color contrast, ARIA validation.</p>
         </div>
+
         <div class="card">
           <h3>API Testing</h3>
-          <p>Collections, assertions, negative cases, reports, basic performance checks.</p>
+          <p>Collections, assertions, negative cases, reporting, basic performance checks.</p>
         </div>
+
         <div class="card">
           <h3>Test Documentation</h3>
-          <p>Test plan, test cases, RTM, summary report, and release sign-off notes.</p>
+          <p>Test plan, test cases, RTM, test summary report, and release sign-off notes.</p>
         </div>
+
         <div class="card">
           <h3>Bug Reporting</h3>
-          <p>Bug Title, Description, Device Info, Test / Repro steps, Expected vs Actual, Logs, Visuals-Screenshots / Video Recordings, Severity/Priority.</p>
+          <p>Clear repro steps, expected vs actual, logs, screenshots/videos, severity & priority.</p>
         </div>
+
         <div class="card">
           <h3>Process Setup</h3>
-          <p>Test Strategy, QA Checklist, Definitions of done, and Lightweight QA flow.</p>
+          <p>Test strategy, QA checklist, definition of done, and lightweight QA flow.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Work Samples -->
-  <section id="samples" class="section">
+  <section id="samples" class="section reveal">
     <div class="container">
       <h2>Work Samples (Deliverables)</h2>
-      <p class="lead">I provide well-structured and detailed QA deliverables that help teams identify issues early, improve product quality, and release with confidence. Below are examples of the work I deliver across projects and clients:<br>
 
-1. Test Plans – Clear testing scope, objectives, timelines, risks, and entry/exit criteria aligned with business requirements.<br>
-2. Test Cases & Test Scenarios – Detailed, reusable test cases covering functional, regression, smoke, sanity, and edge-case scenarios.<br>
-3. Bug Reports – Precise and actionable defect reports including steps to reproduce, expected vs actual results, severity, priority, logs, screenshots, and videos.<br>
-4. Test Execution Reports – Daily/weekly status updates with test coverage, pass/fail metrics, and defect summaries.<br>
-5. Regression & UAT Support – Thorough validation to ensure stability before releases and smooth user acceptance testing.<br>
-6. Cross-Platform Testing – Web, Android, and iOS testing across multiple devices and browsers.<br>
+      <p class="lead">
+        I provide detailed QA deliverables that help teams identify issues early, improve product quality,
+        and ship with confidence.
+      </p>
 
-All deliverables are prepared using industry-standard tools such as Jira, Trello, TestRail, Google Sheets, and Excel, and are customized based on project needs.</p>
       <div class="grid2">
-        <a class="file" href="https://drive.google.com/file/d/13-Iw7eWuyTWlAydwnknaCBb4DuOyCrlY/view?usp=sharing" target="_blank" rel="noreferrer">✅ Sample Test Plan (PDF)</a>
-        <a class="file" href="https://drive.google.com/file/d/1Y4fSz4KCAuvalDbhxZvkM3s4r9xip8cy/view?usp=sharing" target="_blank" target="_blank" rel="noreferrer">✅ Sample Test Cases (XLSX)</a>
-        <a class="file" href="https://drive.google.com/file/d/13kZrrrkBPm-jX7Ml6S6QiVV6jhbNWYp-/view?usp=sharing" target="_blank" rel="noreferrer">✅ Sample Bug Report (DOCX)</a>
-        <a class="file" href="#" rel="noreferrer">✅ Sample Test Summary Report (PDF)</a>
+        <a class="file" href="https://drive.google.com/file/d/13-Iw7eWuyTWlAydwnknaCBb4DuOyCrlY/view?usp=sharing" target="_blank" rel="noreferrer">
+          ✅ Sample Test Plan (PDF)
+        </a>
+
+        <a class="file" href="https://drive.google.com/file/d/1Y4fSz4KCAuvalDbhxZvkM3s4r9xip8cy/view?usp=sharing" target="_blank" rel="noreferrer">
+          ✅ Sample Test Cases (XLSX)
+        </a>
+
+        <a class="file" href="https://drive.google.com/file/d/13kZrrrkBPm-jX7Ml6S6QiVV6jhbNWYp-/view?usp=sharing" target="_blank" rel="noreferrer">
+          ✅ Sample Bug Report (DOCX)
+        </a>
+
+        <a class="file" href="#" rel="noreferrer">
+          ✅ Sample Test Summary Report (PDF)
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials" class="section alt">
+  <section id="testimonials" class="section alt reveal">
     <div class="container">
       <h2>Client Feedback</h2>
 
@@ -171,28 +225,32 @@ All deliverables are prepared using industry-standard tools such as Jira, Trello
         <div class="swiper-wrapper">
           <div class="swiper-slide t-card">
             <p>“Clear communication, fast delivery, and excellent bug reports.”</p>
-            <div class="t-meta">—Sara Cole, Eyecon App, Israel</div>
+            <div class="t-meta">— Sara Cole, Eyecon App, Israel</div>
           </div>
+
           <div class="swiper-slide t-card">
-            <p>“Found critical edge cases we missed. Great tester mindset. 10/10 freelancer”</p>
-            <div class="t-meta">— Connor Bergeron, CBergConsulting, Florida, USA </div>
-            
+            <p>“Found critical edge cases we missed. Great tester mindset. 10/10 freelancer.”</p>
+            <div class="t-meta">— Connor Bergeron, CBergConsulting, Florida, USA</div>
           </div>
+
           <div class="swiper-slide t-card">
             <p>“Reliable regression testing before every release. Saved us time.”</p>
             <div class="t-meta">— Joel Castro, OneMind App, Spain</div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev" aria-label="Previous testimonial"></div>
+        <div class="swiper-button-next" aria-label="Next testimonial"></div>
+      </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="section">
+  <section id="pricing" class="section reveal">
     <div class="container">
       <h2>Rates & Delivery</h2>
+
       <div class="grid3">
         <div class="card price">
           <h3>Hourly</h3>
@@ -227,42 +285,33 @@ All deliverables are prepared using industry-standard tools such as Jira, Trello
           <div class="muted">Delivery: 5–7 days</div>
         </div>
       </div>
-
-      <p class="muted small">
-        
-      </p>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section alt">
+  <section id="contact" class="section alt reveal">
     <div class="container">
       <h2>Contact</h2>
       <p class="lead">Tell me about your product, timeline, and what you need tested.</p>
 
+      <!-- FIX: proper nesting (two cards side-by-side) -->
       <div class="contact-grid">
         <div class="card">
           <h3>Direct</h3>
           <p><b>Email:</b> deepaksharadmittal@gmail.com</p>
           <p><b>WhatsApp:</b> +91-9826095510</p>
           <p><b>Timezone:</b> IST (Asia/Kolkata)</p>
-       <div class="card">
-  <h3>Social</h3>
-  <p>
-    <a href="https://www.linkedin.com/in/deepak-sharad-k-85b031230/" 
-       target="_blank" 
-       rel="noreferrer">
-       LinkedIn
-    </a>
-  </p>
-  <p>
-    <a href="https://github.com/SKSoftwareQA" 
-       target="_blank" 
-       rel="noreferrer">
-       GitHub
-    </a>
-  </p>
-</div>
+        </div>
+
+        <div class="card">
+          <h3>Social</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/deepak-sharad-k-85b031230/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
+          <p>
+            <a href="https://github.com/SKSoftwareQA" target="_blank" rel="noreferrer">GitHub</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -274,19 +323,12 @@ All deliverables are prepared using industry-standard tools such as Jira, Trello
     </div>
   </footer>
 
+  <!-- Rocket button -->
+  <button class="rocket-btn" id="rocketBtn" aria-label="Scroll to top">🚀</button>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

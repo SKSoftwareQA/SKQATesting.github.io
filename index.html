@@ -3,514 +3,142 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Deepak Mittal Software Testing — Professional QA & Testing Services</title>
-  <meta name="description" content="Freelance QA Engineer providing Manual, Accessibility, API, Mobile and Automation testing services. Fast delivery. Clear reporting." />
+  <title>Deepak Mittal Software Testing — Professional QA Services</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
-  <!-- Scroll progress -->
-  <div class="scroll-progress" aria-hidden="true">
-    <div class="scroll-progress__bar" id="scrollBar"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Deepak Mittal Software Testing</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#samples">Work Samples</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#rates">Rates</a>
+      <a class="btn small" href="#contact">Hire Me</a>
+    </nav>
   </div>
+</header>
 
-  <!-- Navbar -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top">
-        Deepak Mittal Software Testing <span>•</span> QA & Testing Services
-      </a>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
 
-      <nav class="links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#samples">Work Samples</a>
-        <a href="#testimonials">Feedback</a>
-        <a href="#pricing">Rates</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-small" href="#contact">Hire Me</a>
-      </nav>
+    <div>
+      <span class="pill">QA / Software Testing • Remote • IST / EST</span>
+      <h1>Ship with confidence.<br>I find bugs before your users do.</h1>
 
-      <!-- ✅ Clean top-right icon row (small + professional) -->
-      <div class="nav-icons" aria-label="Quick contact icons">
-        <a class="nav-icon" href="mailto:sksoftwaretestingtraining@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M6 8l6 4 6-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+      <p class="sub">
+        Manual + API + Accessibility + Mobile + Automation testing with clear
+        test plans, strong test cases, and production-ready bug reports.
+      </p>
 
-        <a class="nav-icon" href="https://wa.me/919826095510" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21a9 9 0 1 0-7.8-4.5L3 21l4.7-1.2A8.9 8.9 0 0 0 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-            <path d="M9.3 8.8c.2-.4.4-.4.6-.4h.6c.2 0 .4.1.4.4.1.4.4 1.3.4 1.4 0 .2 0 .3-.1.5-.1.2-.2.3-.3.4-.1.1-.2.2-.1.4.1.2.5.8 1.1 1.3.8.7 1.4.9 1.6 1 .2.1.3.1.4-.1.1-.1.4-.5.5-.6.1-.2.2-.2.4-.1.2.1 1.2.6 1.4.7.2.1.3.2.3.3 0 .2 0 .8-.4 1.2-.3.4-.8.6-1.1.6-.3 0-1 0-2-.5-1.2-.5-2.1-1.5-2.7-2.3-.6-.7-1.1-1.6-1.2-2.3 0-.7.2-1.2.4-1.5Z" fill="currentColor"/>
-          </svg>
-        </a>
-
-        <a class="nav-icon" href="https://www.linkedin.com/in/sk-software-testing-solutions-292206244/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4.5 4.5h15v15h-15z" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".5"/>
-            <path d="M6.5 9.5V19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M6.5 6.5h0.01" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-            <path d="M10.5 19v-5.2c0-1.7 1-2.7 2.4-2.7 1.5 0 2.1 1 2.1 2.6V19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M10.5 12.5v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-        </a>
-
-        <a class="nav-icon" href="https://github.com/SKSoftwareQA" target="_blank" rel="noreferrer" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2.5c-5.2 0-9.5 4.1-9.5 9.2 0 4.1 2.7 7.6 6.5 8.8.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.1-3.3-1.1-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.8 1.3 2 1 2.5.8.1-.6.3-1 .5-1.2-2.1-.2-4.3-1-4.3-4.6 0-1 .4-1.8 1-2.5-.1-.2-.4-1.1.1-2.2 0 0 .8-.2 2.6 1a9.3 9.3 0 0 1 4.7 0c1.8-1.2 2.6-1 2.6-1 .5 1.1.2 2 .1 2.2.6.7 1 1.5 1 2.5 0 3.6-2.2 4.3-4.3 4.6.3.3.6.8.6 1.7V20c0 .3.2.6.7.5 3.8-1.2 6.5-4.7 6.5-8.8 0-5.1-4.3-9.2-9.5-9.2Z" fill="currentColor"/>
-          </svg>
-        </a>
+      <div class="cta">
+        <a class="btn" href="#contact">Get a Free Quote</a>
+        <a class="btn outline" href="#samples">View Deliverables</a>
       </div>
 
-      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <main id="top" class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="glow g1"></div>
-      <div class="glow g2"></div>
-      <div class="glow g3"></div>
-      <div class="gridlines"></div>
-      <div class="noise"></div>
-    </div>
-
-    <div class="container hero-grid">
-      <div class="hero-copy reveal">
-        <p class="pill">QA / Software Testing • Remote • IST / EST</p>
-
-        <h1>Ship with confidence.<br />I find bugs before your users do.</h1>
-
-        <p class="sub">
-          Manual + Accessibility + API + Mobile + Automation testing with clear plans, strong test cases,
-          and production-ready bug reports.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn" href="#contact">Get a Free Quote</a>
-          <a class="btn btn-ghost" href="#samples">View Deliverables</a>
-        </div>
-
-        <div class="trust reveal">
-          <div class="trust__label">Trusted workflow for fast releases</div>
-          <div class="trust__row">
-            <span class="trust-pill">Structured QA Plan</span>
-            <span class="trust-pill">Risk-based Testing</span>
-            <span class="trust-pill">Clear Bug Evidence</span>
-            <span class="trust-pill">Retest & Sign-off</span>
-          </div>
-        </div>
-
-        <div class="proof reveal">
-          <div class="proof-box">
-            <div class="proof-big">4.8★</div>
-            <div class="proof-small">Client satisfaction</div>
-          </div>
-          <div class="proof-box">
-            <div class="proof-big">24–72h</div>
-            <div class="proof-small">Typical turnaround</div>
-          </div>
-          <div class="proof-box">
-            <div class="proof-big">6+ yrs</div>
-            <div class="proof-small">Testing experience</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero slider -->
-      <div class="hero-slider reveal">
-        <div class="swiper" id="heroSwiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide-card">
-              <img
-                src="https://drive.google.com/uc?export=view&id=13j9e5DARp_YjL4nLnsM4Aq-sIdegcYZc"
-                alt="Testing dashboard"
-                loading="lazy"
-              />
-              <div class="slide-caption">Exploratory + regression testing</div>
-            </div>
-
-            <div class="swiper-slide slide-card">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=70"
-                alt="Reports"
-                loading="lazy"
-              />
-              <div class="slide-caption">Clear reports & documentation</div>
-            </div>
-
-            <div class="swiper-slide slide-card">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=70"
-                alt="Team work"
-                loading="lazy"
-              />
-              <div class="slide-caption">Collaboration with dev teams</div>
-            </div>
-
-          </div>
-
-          <div class="swiper-button-prev" aria-label="Previous slide"></div>
-          <div class="swiper-button-next" aria-label="Next slide"></div>
-          <div class="swiper-pagination"></div>
-        </div>
+      <div class="stats">
+        <div><strong>4.8★</strong><span>Client satisfaction</span></div>
+        <div><strong>24–72h</strong><span>Typical turnaround</span></div>
+        <div><strong>6+ yrs</strong><span>Testing experience</span></div>
       </div>
     </div>
-  </main>
 
-  <!-- Logos strip -->
-  <section class="strip">
-    <div class="container strip-inner reveal">
-      <div class="strip-title">Great for startups, agencies, and product teams shipping weekly</div>
-      <div class="strip-logos" aria-label="Logo strip">
-        <span class="logo-chip">Web Apps</span>
-        <span class="logo-chip">Mobile Apps</span>
-        <span class="logo-chip">SaaS</span>
-        <span class="logo-chip">E-commerce</span>
-        <span class="logo-chip">APIs</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>About</h2>
-        <p class="lead">
-          I help teams improve release confidence through fast, structured testing and actionable bug reports.
-          My focus is on what matters most: risk, clarity, and speed.
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="card gradient-border reveal">
-          <h3>What you get</h3>
-          <ul class="checklist">
-            <li>Test plan + scope aligned with your release</li>
-            <li>High-signal test cases (not noisy lists)</li>
-            <li>Bug reports with evidence + impact</li>
-            <li>Retest + release sign-off notes</li>
-          </ul>
-        </div>
-
-        <div class="card gradient-border reveal">
-          <h3>How I work</h3>
-          <div class="timeline">
-            <div class="step">
-              <div class="step-dot"></div>
-              <div>
-                <div class="step-title">1) Understand product & risk</div>
-                <div class="step-desc">Quick walkthrough + define critical flows.</div>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-dot"></div>
-              <div>
-                <div class="step-title">2) Execute + report</div>
-                <div class="step-desc">Exploratory + regression with clear evidence.</div>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-dot"></div>
-              <div>
-                <div class="step-title">3) Retest + sign-off</div>
-                <div class="step-desc">Verify fixes and confirm release readiness.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="chips reveal">
-        <span>Manual Testing (Functional / Regression / End-to-End / UAT)</span>
-        <span>API (Postman / Swagger)</span>
-        <span>Mobile (iOS / Android)</span>
-        <span>Game Testing</span>
-        <span>Accessibility (WCAG / ADA / Section 508)</span>
-        <span>Agile / Jira / Trello / Asana / Notion / BrowserStack / TestRail</span>
-        <span>Automation (Selenium / Playwright)</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Services</h2>
-        <p class="lead">High-impact QA services that reduce release risk and improve speed.</p>
-      </div>
-
-      <div class="grid3">
-        <div class="card service-card reveal">
-          <div class="svc-icon">🧭</div>
-          <h3>Manual Testing</h3>
-          <p>Exploratory, Regression, Smoke, Sanity, UI/UX checks, Cross-browser testing.</p>
-        </div>
-
-        <div class="card service-card reveal">
-          <div class="svc-icon">♿</div>
-          <h3>Accessibility</h3>
-          <p>WCAG audits, keyboard-only navigation, contrast checks, ARIA validation.</p>
-        </div>
-
-        <div class="card service-card reveal">
-          <div class="svc-icon">🔌</div>
-          <h3>API Testing</h3>
-          <p>Collections, assertions, negative cases, reporting, basic performance checks.</p>
-        </div>
-
-        <div class="card service-card reveal">
-          <div class="svc-icon">🧾</div>
-          <h3>Test Documentation</h3>
-          <p>Test plan, test cases, RTM, test summary report, release sign-off notes.</p>
-        </div>
-
-        <div class="card service-card reveal">
-          <div class="svc-icon">🐞</div>
-          <h3>Bug Reporting</h3>
-          <p>Clear repro steps, expected vs actual, logs, evidence, severity & priority.</p>
-        </div>
-
-        <div class="card service-card reveal">
-          <div class="svc-icon">⚙️</div>
-          <h3>Process Setup</h3>
-          <p>Test strategy, QA checklist, Definition of Done, and lightweight QA workflows.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Samples -->
-  <section id="samples" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Work Samples</h2>
-        <p class="lead">Click to view sample deliverables — structured and client-friendly.</p>
-      </div>
-
-      <div class="grid2">
-        <a class="file reveal" href="https://drive.google.com/file/d/13-Iw7eWuyTWlAydwnknaCBb4DuOyCrlY/view?usp=sharing" target="_blank" rel="noreferrer">
-          ✅ Sample Test Plan (PDF)
-        </a>
-
-        <a class="file reveal" href="https://drive.google.com/file/d/1Y4fSz4KCAuvalDbhxZvkM3s4r9xip8cy/view?usp=sharing" target="_blank" rel="noreferrer">
-          ✅ Sample Test Cases (XLSX)
-        </a>
-
-        <a class="file reveal" href="https://drive.google.com/file/d/13kZrrrkBPm-jX7Ml6S6QiVV6jhbNWYp-/view?usp=sharing" target="_blank" rel="noreferrer">
-          ✅ Sample Bug Report (DOCX)
-        </a>
-
-        <a class="file reveal" href="#" rel="noreferrer">
-          ✅ Sample Test Summary Report (PDF)
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Client Feedback</h2>
-        <p class="lead">A few words from past clients.</p>
-      </div>
-
-      <div class="swiper reveal" id="testimonialsSwiper">
+    <div class="hero-slider">
+      <div class="swiper" id="heroSwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide card t-card">
-            <p>“Clear communication, fast delivery, and excellent bug reports.”</p>
-            <div class="t-meta">— Sara Cole, Eyecon App, Israel</div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=70">
           </div>
-
-          <div class="swiper-slide card t-card">
-            <p>“Found critical edge cases we missed. Great tester mindset. 10/10 freelancer.”</p>
-            <div class="t-meta">— Connor Bergeron, CBergConsulting, Florida, USA</div>
-          </div>
-
-          <div class="swiper-slide card t-card">
-            <p>“Reliable regression testing before every release. Saved us time.”</p>
-            <div class="t-meta">— Joel Castro, OneMind App, Spain</div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=70">
           </div>
         </div>
-
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev" aria-label="Previous testimonial"></div>
-        <div class="swiper-button-next" aria-label="Next testimonial"></div>
       </div>
     </div>
-  </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Rates & Delivery</h2>
-        <p class="lead">Transparent pricing. Custom packages available.</p>
-      </div>
+  </div>
+</section>
 
-      <div class="grid3">
-        <div class="card price reveal">
-          <h3>Hourly</h3>
-          <div class="price-big">$15/hr</div>
-          <ul>
-            <li>Manual / API / basic automation</li>
-            <li>Daily status updates</li>
-            <li>Bug report + evidence</li>
-          </ul>
-          <div class="muted">Delivery: same day – 72 hours</div>
-        </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I help teams improve release confidence through fast, structured testing
+      and actionable bug reporting. My focus is risk, clarity, and speed.
+    </p>
+  </div>
+</section>
 
-        <div class="card price popular reveal">
-          <div class="popular-badge">Most Popular</div>
-          <h3>Starter Package</h3>
-          <div class="price-big">$199</div>
-          <ul>
-            <li>Smoke + regression (up to X screens)</li>
-            <li>Test cases + bug report</li>
-            <li>1 re-test cycle</li>
-          </ul>
-          <div class="muted">Delivery: 2–4 days</div>
-          <div class="price-cta">
-            <a class="btn btn-small" href="#contact">Get This Package</a>
-          </div>
-        </div>
+<!-- SERVICES -->
+<section id="services" class="section alt">
+  <div class="container grid3">
+    <div class="card"><h3>Manual Testing</h3><p>Regression, Smoke, Sanity, UI/UX</p></div>
+    <div class="card"><h3>API Testing</h3><p>Postman, Swagger, Assertions</p></div>
+    <div class="card"><h3>Accessibility</h3><p>WCAG, ADA, Keyboard, ARIA</p></div>
+    <div class="card"><h3>Bug Reporting</h3><p>Clear steps, evidence, severity</p></div>
+    <div class="card"><h3>Automation</h3><p>Selenium, Playwright basics</p></div>
+    <div class="card"><h3>Process Setup</h3><p>QA strategy & workflows</p></div>
+  </div>
+</section>
 
-        <div class="card price reveal">
-          <h3>Release QA</h3>
-          <div class="price-big">$499</div>
-          <ul>
-            <li>Test plan + execution</li>
-            <li>Cross-browser coverage</li>
-            <li>Summary report + sign-off</li>
-          </ul>
-          <div class="muted">Delivery: 5–7 days</div>
-        </div>
-      </div>
+<!-- WORK SAMPLES -->
+<section id="samples" class="section">
+  <div class="container grid2">
+    <a class="file" href="#">Sample Test Plan (PDF)</a>
+    <a class="file" href="#">Sample Test Cases (XLSX)</a>
+    <a class="file" href="#">Sample Bug Report (DOCX)</a>
+    <a class="file" href="#">Sample Summary Report (PDF)</a>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback" class="section alt">
+  <div class="container grid3">
+    <div class="card">“Excellent bug reports and fast delivery.”</div>
+    <div class="card">“Found edge cases we missed. 10/10.”</div>
+    <div class="card">“Reliable regression testing before releases.”</div>
+  </div>
+</section>
+
+<!-- RATES -->
+<section id="rates" class="section">
+  <div class="container grid3">
+    <div class="card"><h3>Hourly</h3><strong>$15/hr</strong></div>
+    <div class="card highlight"><h3>Starter</h3><strong>$199</strong></div>
+    <div class="card"><h3>Release QA</h3><strong>$499</strong></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container grid2">
+    <div>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:sksoftwaretestingtraining@gmail.com">sksoftwaretestingtraining@gmail.com</a></p>
+      <p>WhatsApp: +91-9826095510</p>
     </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>FAQ</h2>
-        <p class="lead">Quick answers clients usually ask before hiring.</p>
-      </div>
-
-      <div class="faq reveal">
-        <details class="faq-item">
-          <summary>How quickly can you start?</summary>
-          <p>Usually within 24–48 hours depending on workload. For urgent releases, I can prioritize.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>What do you need from my side?</summary>
-          <p>Access to staging build, test credentials, basic scope goals, and key flows. I handle the rest.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>How do you report bugs?</summary>
-          <p>Clear steps, expected vs actual, severity/priority, screenshots/video, logs, and impact notes.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Do you work with teams across time zones?</summary>
-          <p>Yes — I support IST/EST and async updates with daily status reports.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Contact</h2>
-        <p class="lead">Tell me about your product, timeline, and what you need tested.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="card reveal">
-          <h3>Direct</h3>
-          <div class="contact-row">
-            <span class="mini-ico">✉️</span>
-            <a href="mailto:sksoftwaretestingtraining@gmail.com">sksoftwaretestingtraining@gmail.com</a>
-          </div>
-          <div class="contact-row">
-            <span class="mini-ico">💬</span>
-            <a href="https://wa.me/919826095510" target="_blank" rel="noreferrer">+91-9826095510</a>
-          </div>
-          <div class="contact-row">
-            <span class="mini-ico">🕒</span>
-            <span>IST (Asia/Kolkata)</span>
-          </div>
-
-          <div class="contact-actions">
-            <a class="btn btn-small" href="mailto:sksoftwaretestingtraining@gmail.com">Email Me</a>
-            <a class="btn btn-small btn-ghost" href="https://wa.me/919826095510" target="_blank" rel="noreferrer">WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h3>Social</h3>
-          <div class="social-list">
-            <a class="social-link" href="https://www.linkedin.com/in/sk-software-testing-solutions-292206244/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="social-link" href="https://github.com/SKSoftwareQA" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-
-          <div class="mini-gallery">
-            <div class="mini-img" aria-hidden="true"></div>
-            <div class="mini-img" aria-hidden="true"></div>
-            <div class="mini-img" aria-hidden="true"></div>
-          </div>
-          <p class="muted">Tip: Ask for a quick QA audit — I’ll tell you top risks in 15 minutes.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Deepak Mittal Software Testing — Professional QA & Testing Services</div>
-      <div class="muted">Built with HTML/CSS/JS • Hosted free</div>
-    </div>
-  </footer>
-
-  <!-- Sticky CTA Bar -->
-  <div class="sticky-cta" id="stickyCta" role="region" aria-label="Quick contact actions">
-    <div class="sticky-cta-inner">
-      <div class="sticky-cta-left">
-        <div class="sticky-badge">Available for QA Projects</div>
-        <div class="sticky-text">
-          Want a quick QA audit or release testing? <span class="sticky-text-strong">Get a reply today.</span>
-        </div>
-      </div>
-
-      <div class="sticky-cta-actions">
-        <a class="sticky-btn" href="mailto:sksoftwaretestingtraining@gmail.com">Email</a>
-        <a class="sticky-btn sticky-btn-whatsapp" href="https://wa.me/919826095510" target="_blank" rel="noreferrer">WhatsApp</a>
-        <a class="sticky-btn sticky-btn-primary" href="#contact">Hire Me</a>
-        <button class="sticky-close" id="stickyClose" aria-label="Close quick actions">✕</button>
-      </div>
+    <div>
+      <h3>Social</h3>
+      <p><a href="#">LinkedIn</a></p>
+      <p><a href="#">GitHub</a></p>
     </div>
   </div>
+</section>
 
-  <!-- Rocket -->
-  <button class="rocket-btn" id="rocketBtn" aria-label="Scroll to top">
-    🚀
-    <span class="rocket-flame" aria-hidden="true"></span>
-  </button>
+<footer class="footer">
+  © 2026 Deepak Mittal Software Testing
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
